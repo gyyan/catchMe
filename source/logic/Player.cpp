@@ -4,14 +4,15 @@
 #include <algorithm>
 using namespace std;
 using namespace CATCHME;
+using namespace Sexy;
 
 Player::Player()
 {
-	mX = 0.f;
-	mY = 0.f;
+	mPosition = Point(0, 0);
 	mSpeed = 0.f;
 	mAcc = 0.f;
-	mAngle = 0.f;
+	mTargetX = 1.0f;
+	mTargetY = 0.0f;
 
 	mName = "player";
 	mLife = 100;

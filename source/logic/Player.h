@@ -1,6 +1,7 @@
 #ifndef __PLAYER_H_
 #define __PLAYER_H_
 
+#include "SexyAppFramework/Point.h"
 #include <string>
 #include <map>
 #include <vector>
@@ -13,11 +14,12 @@ namespace CATCHME
 	class Player
 	{
 	public :
-		float mX;
-		float mY;
+		Sexy::Point mPosition;
 		float mSpeed;
 		float mAcc;
-		float mAngle; // 0 is up 90 is right 180 is down .
+
+		float mTargetX;// the play direction 
+		float mTargetY;
 
 		typedef std::vector<PlayerSatus*> VEC_PLAYER_STATUS;
 

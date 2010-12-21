@@ -4,6 +4,7 @@
 namespace CATCHME
 {
 	class Player;
+	class JJCScene;
 	class Skill
 	{
 	public:
@@ -14,7 +15,7 @@ namespace CATCHME
 		Skill();
 		virtual ~Skill();
 
-		virtual bool UseSkill(Player * sourcePlayer, Player *targetPlayer);
+		virtual bool UseSkill(JJCScene* jjcScene, Player * sourcePlayer, Player *targetPlayer);
 		void UseSkillSucess();
 
 		bool IfInCD();

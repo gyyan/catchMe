@@ -15,7 +15,7 @@ Skill::~Skill()
 
 }
 
-bool Skill::UseSkill(CATCHME::Player *sourcePlayer, CATCHME::Player *targetPlayer)
+bool Skill::UseSkill(CATCHME::JJCScene* jjcScene, CATCHME::Player *sourcePlayer, CATCHME::Player *targetPlayer)
 {
 	// WARNING: it just a sample call ,don't call this based class function
 	if(IfInCD())
